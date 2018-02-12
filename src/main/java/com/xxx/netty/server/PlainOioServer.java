@@ -32,7 +32,7 @@ public class PlainOioServer {
 							//close connection once message written and flushed
 							clientSocket.close();
 						} catch (Exception e) {
-							// TODO: handle exception
+							e.printStackTrace();
 						}
 					}
 				}).start();//start thread to begin handing
